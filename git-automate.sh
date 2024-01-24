@@ -18,4 +18,4 @@ git commit -m "$commit_message"
 echo -e '\033[0;35m2.Committed !\n \033[0m'
 git push origin $branch_name
 
-echo -e "\n \033[0;36mChanges committed and pushed successfully to ${origin_url} branch ${branch_name} from ${current_directory}!\033[0m\n\n\n\n"
+echo -e "\n \033[0;36mChanges committed and pushed successfully to \033[0;32m${origin_url}\033[0m branch \033[0;32m${branch_name}\033[0m from ${current_directory}!\033[0m\n\n\n\n"
