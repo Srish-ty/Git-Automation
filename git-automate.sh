@@ -12,4 +12,4 @@ git add .
 git commit -m "$commit_message"
 git push origin $branch_name
 
-echo "Changes commited and pushed successfully in $(pwd)."
+echo -e "\n \nChanges commited and pushed successfully in to Origin from $(pwd). \n"
