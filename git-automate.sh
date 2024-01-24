@@ -11,7 +11,6 @@ current_directory=$(pwd)
 origin_url=$(git config --get remote.origin.url)
 
 # Run Git commands in the current working directory
-echo -e '\n'
 git add .
 echo -e '\033[0;35m1.Staged all files \n \033[0m'
 
