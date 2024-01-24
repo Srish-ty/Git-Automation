@@ -9,10 +9,10 @@ branch_name=${branch_name:-main}
 
 # Run Git commands in the current working directory
 git add .
-echo -e "\n1.Staged changes\n"
+echo -e '\033[0;32m1.Staged changes \n \033[0m'
 
 git commit -m "$commit_message"
-echo -e "\n2.Committed !\n"
+echo -e '\033[0;35m2.Committed !\n \033[0m'
 git push origin $branch_name
 
-echo -e "\n \nChanges commited and pushed successfully in to Origin from $(pwd).!! \n"
+echo -e '\n \n\033[0;36mChanges commited and pushed successfully in to Origin from $(pwd).!! \n\033[0m'
