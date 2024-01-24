@@ -8,6 +8,7 @@ read -p "Enter branch name (default is 'main'): " branch_name
 branch_name=${branch_name:-main}
 
 current_directory=$(pwd)
+origin_url=$(git config --get remote.origin.url)
 
 # Run Git commands in the current working directory
 git add .
@@ -17,4 +18,4 @@ git commit -m "$commit_message"
 echo -e '\033[0;35m2.Committed !\n \033[0m'
 git push origin $branch_name
 
-echo -e "\n \033[0;36mChanges committed and pushed successfully in ${current_directory}!\033[0m\n\n\n\n"
+echo -e "\n \033[0;36mChanges committed and pushed successfully to ${origin_url} branch ${branch_name} from ${current_directory}!\033[0m\n\n\n\n"
